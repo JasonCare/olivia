@@ -20,10 +20,12 @@
 
     body {
       margin: 0;
-      font-family: Arial;
-      font-size: 17px;
+
+      font: 300 16px/1.8 Montserrat, sans-serif;
+
       padding-top: 70px;
       color: white;
+      background-color: rgb(34, 15, 58);
     }
 
     .bgVideo {
@@ -47,6 +49,14 @@
       position: relative;
       top: -70px;
       visibility: hidden;
+    }
+
+    .contactCard {
+      background-color: rgba(100, 13, 117, 0.3);
+    }
+
+    .event-list {
+      padding-left: 55px;
     }
   </style>
 </head>
@@ -131,8 +141,8 @@
       <p>Hiring a skilled aerialist to perform at your event or venue is sure to woo any audience, add something special
         to your event or keep clients coming back.</p>
 
-      <hX>Aerial performances are a spectacular addition to:</hX>
-      <ul>
+      <h5>Aerial performances are a spectacular addition to:</h5>
+      <ul class="event-list">
         <li>Corporate events</li>
         <li>Private parties</li>
         <li>Weddings</li>
@@ -189,15 +199,16 @@
   </div>
 
   <!--Contact-->
-  <div class="container mt-5">
-    <a class="anchor" id="contactArea"></a>
-    <div class="row">
-      <h2>Contact</h2>
-    </div>
-    <div class="row">
-      <p><a href="mailto: oliannecarey@gmail.com">oliannecarey@gmail.com</a></p>
+  <div class="container">
+    <div class="card mt-5 mb-5 contactCard">
+      <div class="card-body">
+        <h5 class="card-title">Contact</h5>
+        <p class="card-text">Please contact me by email for any inquiries.</p>
+        <a href="mailto: oliannecarey@gmail.com" class="card-link">oliannecarey@gmail.com</a>
+      </div>
     </div>
 
+  </div>
   </div>
 
 </body>
